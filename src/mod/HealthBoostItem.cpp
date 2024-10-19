@@ -6,7 +6,7 @@
 #include "mc/world/attribute/AttributeInstance.h"
 #include "mc/world/attribute/SharedAttributes.h"
 
-ll::Logger logger("HealthRing");
+ll::Logger logger("HealthBoostItem");
 
 static const mce::UUID    healthAppleId   = mce::UUID::fromString("00000000-0000-0000-0000-000000000001");
 static std::string const& healthAppleName = "HealthApple";

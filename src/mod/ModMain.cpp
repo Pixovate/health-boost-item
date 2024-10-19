@@ -1,33 +1,33 @@
-#include "mod/MyMod.h"
+#include "mod/ModMain.h"
 
 #include <memory>
 
 #include "ll/api/mod/RegisterHelper.h"
 
-namespace my_mod {
+namespace health_boost_item {
 
-static std::unique_ptr<MyMod> instance;
+static std::unique_ptr<HealthBoostItem> instance;
 
-MyMod& MyMod::getInstance() { return *instance; }
+HealthBoostItem& HealthBoostItem::getInstance() { return *instance; }
 
-bool MyMod::load() {
+bool HealthBoostItem::load() {
     getSelf().getLogger().debug("Loading...");
     // Code for loading the mod goes here.
     return true;
 }
 
-bool MyMod::enable() {
+bool HealthBoostItem::enable() {
     getSelf().getLogger().debug("Enabling...");
     // Code for enabling the mod goes here.
     return true;
 }
 
-bool MyMod::disable() {
+bool HealthBoostItem::disable() {
     getSelf().getLogger().debug("Disabling...");
     // Code for disabling the mod goes here.
     return true;
 }
 
-} // namespace my_mod
+} // namespace health_boost_item
 
-LL_REGISTER_MOD(my_mod::MyMod, my_mod::instance);
+LL_REGISTER_MOD(health_boost_item::HealthBoostItem, health_boost_item::instance);
