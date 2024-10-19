@@ -1,25 +1,25 @@
 {
     "format_version": 2,
-    "tooth": "health-ring",
-    "version": "0.0.0",
+    "tooth": "health-boost-item",
+    "version": "0.0.1",
     "info": {
-        "name": "My Mod Name",
-        "description": "My Mod Description",
-        "author": "My Name",
+        "name": "Health Boost Item",
+        "description": "简单的mod，使你背包内的一些物品可以调整你的血量上限",
+        "author": "Pixovate",
         "tags": [
             "platform:levilamina",
             "type:mod"
         ]
     },
-    "asset_url": "My Asset Url",
+    "asset_url": "https://github.com/Pixovate/health-boost-item/releases/download/v0.0.1/health-boost-item-windows-x64.zip",
     "prerequisites": {
-        "github.com/LiteLDev/LeviLamina": "My LeviLamina Dependency Version"
+        "github.com/LiteLDev/LeviLamina": "0.13.x"
     },
     "files": {
         "place": [
             {
-                "src": "health-ring/*",
-                "dest": "plugins/health-ring/"
+                "src": "health-boost-item/*",
+                "dest": "plugins/health-boost-item"
             }
         ]
     }
